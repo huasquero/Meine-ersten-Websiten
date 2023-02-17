@@ -1,0 +1,62 @@
+
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>HTML_links_excercise</title>
+	</head>
+	<body style="background-color: lightblue ;">
+		<!--
+			The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+			The link text is the part that will be visible to the reader. 
+			Clicking on the link text, will send the reader to the specified URL address.
+		-->
+		<p>When you click on the first link below, the link will be opened in the current browser window. If you don't want that to happen, you have to specify a target (that the developer of the webpage has to do, you as a user don't have to do this)</p>
+		The target attribute can have one of the following values:<br>
+		<ul><li>_self - Default. Opens the document in the same window/tab as it was clicked</li><br>
+		<li>_blank - Opens the document in a new window or tab</li><br>
+		<li>_parent - Opens the document in the parent frame</li><br>
+		<li>_top - Opens the document in the full body of the window </li></ul></p>
+
+		<!--No target specifyed, therefore the link will be opend in the same window (tab).-->
+		<a href="https://de.wikipedia.org/wiki/Elephant" >If you click on this link, the link will open in this window which you are in right now, hence this website will disapear. </a>
+
+		<!--target specifyed to '_blank', therefore the link will be opend in a new window (tab).-->
+
+		<p><a href="https://de.wikipedia.org/wiki/Elephant" target="_blank">If you click on this link, the link will open in another window and this website will still be open.</a></p>
+
+
+		<!--
+			By default, links will appear as follows in all browsers:
+			An unvisited link is underlined and blue
+			A visited link is underlined and purple
+			An active link is underlined and red 
+		-->
+
+		<!--
+			Absolute URLs vs. Relative URLs
+			Both examples above are using an absolute URL (a full web address) in the href attribute.
+			A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part): 
+		-->
+
+		<!--
+			To use an image as a link, just put the <img> tag inside the <a> tag: First comes <a href="link i want the picture to show to" target="_blank"><img src="image that one can click on in order to get to the link specified before" 
+		-->
+		<p>The image below leads you to the wikipedia page on elephants, try click on it.</p>
+		<a href="https://de.wikipedia.org/wiki/Elephant" target="_blank"><img src="https://www.wwf.org.uk/sites/default/files/styles/social_share_image/public/2018-10/Large_WW1113482.jpg?itok=Bluh496C"style="width:300px;height:200px"></a>
+
+		<!--
+			Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+		 -->
+		<p> <a href="mailto:janosch.buente1@yahoo.de">Send me (Janosch Bünte) an email!</a></p>
+
+		<p title="Hi, I'm a tooltip. I appear because you hover your cursor over the word 'Tooltip'">Tooltip</p>
+
+		<!--
+			Button as a Link
+			To use an HTML button as a link, you have to add some JavaScript code.
+			JavaScript allows you to specify what happens at certain events, such as a click of a button: 
+		-->
+		<button onclick="C:\Users\buent\Documents\Dokumente HP Computer\Persönlich\Ausflüge">Hike Plan</button>
+
+	</body>
+</html>
